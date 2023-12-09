@@ -1,12 +1,22 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <Header />
+  <router-view />
 </template>
 
+<script>
+import Header from "./components/Header.vue";
+
+export default {
+  components: { Header },
+};
+</script>
+
 <style>
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
